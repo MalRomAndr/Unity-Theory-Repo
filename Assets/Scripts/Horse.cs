@@ -1,11 +1,11 @@
-public class Horse : Character
+public class Horse : Character // INHERITANCE
 {
     public Horse()
     {
         Name = "Horse";
     }
 
-    public override void ShowDefaultMessage()
+    public override void ShowDefaultMessage() // POLYMORPHISM
     {
         ShowMessage($"{Name}: Neigh, neigh!");
     }

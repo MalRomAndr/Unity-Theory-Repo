@@ -8,8 +8,7 @@ public abstract class Character : MonoBehaviour
     public TextMeshProUGUI text;
 
     private string characterName;
-
-    public string Name
+    public string Name // ENCAPSULATION
     {
         get { return characterName; }
         set
@@ -24,7 +23,7 @@ public abstract class Character : MonoBehaviour
 
     public abstract void ShowDefaultMessage();
 
-    protected void ShowMessage(string message)
+    protected void ShowMessage(string message) // ABSTRACTION
     {
         if (text != null)
         {
